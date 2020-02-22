@@ -24,7 +24,7 @@ body {
 }
 
 a {
-  color: #323232;
+  color: #1a0dab;
   text-decoration: none;
 }
 
@@ -331,6 +331,10 @@ profile
   display: inline !important;
 }
 
+#JavaGold a::after {
+  background: #1a0dab;
+}
+
 #certified th {
   text-align: left;
 }
@@ -427,6 +431,7 @@ profile
 
 #links .links-list li {
   text-align: center;
+  margin: auto;
 }
 
 #links .links-list li a {
@@ -553,6 +558,23 @@ profile
     font-size: 32px;
   }
 
+  #profile .two-column-wrapper {
+    flex-direction: column;
+  }
+  #profile .two-column-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  #profile .two-column-image img {
+    margin: 0 auto;
+  }
+
+  #profile .two-column-desc {
+    width: 100%;
+  }
+
   #feature .two-column-wrapper {
     width: 100%;
     -ms-flex-wrap: wrap;
@@ -612,9 +634,13 @@ profile
   }
 
   #skill .skill-desc {
-    flex-basis: calc(100% - 45px - 20px);
+    /* lex-basis: calc(100% - 45px - 20px); */
     text-align: center;
     padding: 2%;
+  }
+
+  #certified th {
+    text-align: center;
   }
 
   #skill .rate {
@@ -650,6 +676,7 @@ profile
 
   #links .links-list ul {
     width: 100%;
+    justify-content: space-evenly;
   }
 
   #links .links-list li {
@@ -657,7 +684,7 @@ profile
   }
 
   #links .links-list li img {
-    width: 30px;
+    width: auto;
   }
 
   #links .links-list-desc {
