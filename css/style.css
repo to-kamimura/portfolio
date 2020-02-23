@@ -339,6 +339,10 @@ profile
   text-align: left;
 }
 
+#certified th.logo {
+  width: 18%;
+}
+
 #skill .rate1:before {
   content: "★☆☆☆☆";
 }
